@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e6ce5578-db20-462f-89f4-c10a29497390": {
+      "ProjectGuid": "e6ce5578-db20-462f-89f4-c10a29497390",
+      "DisplayName": "Branch.Application",
+      "ColorIndex": 0
+    },
+    "b3945be8-517a-48af-96aa-933b380bf52d": {
+      "ProjectGuid": "b3945be8-517a-48af-96aa-933b380bf52d",
+      "DisplayName": "Branch.Infrastructure",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

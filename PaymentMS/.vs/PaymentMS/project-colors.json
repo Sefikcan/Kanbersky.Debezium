@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "24542162-c6da-4794-8aa9-764295d71b7d": {
+      "ProjectGuid": "24542162-c6da-4794-8aa9-764295d71b7d",
+      "DisplayName": "Payment.Application",
+      "ColorIndex": 0
+    },
+    "5aeb0262-1fc7-4d30-8fde-06e08de5ca42": {
+      "ProjectGuid": "5aeb0262-1fc7-4d30-8fde-06e08de5ca42",
+      "DisplayName": "Payment.Infrastructure",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
