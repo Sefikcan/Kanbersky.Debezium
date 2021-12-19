@@ -1,0 +1,17 @@
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\bin\Debug\net6.0\Payment.Application.deps.json
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\bin\Debug\net6.0\Payment.Application.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\bin\Debug\net6.0\ref\Payment.Application.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\bin\Debug\net6.0\Payment.Application.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\bin\Debug\net6.0\Payment.Common.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\bin\Debug\net6.0\Payment.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\bin\Debug\net6.0\Payment.Infrastructure.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\bin\Debug\net6.0\Payment.Common.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\obj\Debug\net6.0\Payment.Application.csproj.AssemblyReference.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\obj\Debug\net6.0\Payment.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\obj\Debug\net6.0\Payment.Application.AssemblyInfoInputs.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\obj\Debug\net6.0\Payment.Application.AssemblyInfo.cs
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\obj\Debug\net6.0\Payment.Application.csproj.CoreCompileInputs.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\obj\Debug\net6.0\Payment.Application.csproj.CopyComplete
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\obj\Debug\net6.0\Payment.Application.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\obj\Debug\net6.0\ref\Payment.Application.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Application\obj\Debug\net6.0\Payment.Application.pdb

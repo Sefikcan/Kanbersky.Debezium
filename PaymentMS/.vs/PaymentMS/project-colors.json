@@ -10,7 +10,22 @@
       "ProjectGuid": "5aeb0262-1fc7-4d30-8fde-06e08de5ca42",
       "DisplayName": "Payment.Infrastructure",
       "ColorIndex": 1
+    },
+    "6866f37a-3020-4227-b977-af8cc690feba": {
+      "ProjectGuid": "6866f37a-3020-4227-b977-af8cc690feba",
+      "DisplayName": "Payment.Common",
+      "ColorIndex": 2
+    },
+    "bcaa1aaf-456f-4821-8fde-d2a7ac8193e3": {
+      "ProjectGuid": "bcaa1aaf-456f-4821-8fde-d2a7ac8193e3",
+      "DisplayName": "Payment.Api",
+      "ColorIndex": 3
+    },
+    "cb2674d9-f32f-4e98-aea7-59a7335e0e60": {
+      "ProjectGuid": "cb2674d9-f32f-4e98-aea7-59a7335e0e60",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 5
 }

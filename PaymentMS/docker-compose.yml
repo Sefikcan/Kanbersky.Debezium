@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  paymentdb:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+
+  payment.api:
+    image: ${DOCKER_REGISTRY-}paymentapi
+    build:
+      context: .
+      dockerfile: src/Payment.Api/Dockerfile

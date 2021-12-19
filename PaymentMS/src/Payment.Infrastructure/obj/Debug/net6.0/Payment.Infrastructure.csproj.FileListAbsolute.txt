@@ -1,0 +1,15 @@
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\bin\Debug\net6.0\Payment.Infrastructure.deps.json
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\bin\Debug\net6.0\Payment.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\bin\Debug\net6.0\ref\Payment.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\bin\Debug\net6.0\Payment.Infrastructure.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\bin\Debug\net6.0\Payment.Common.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\bin\Debug\net6.0\Payment.Common.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\obj\Debug\net6.0\Payment.Infrastructure.csproj.AssemblyReference.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\obj\Debug\net6.0\Payment.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\obj\Debug\net6.0\Payment.Infrastructure.AssemblyInfoInputs.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\obj\Debug\net6.0\Payment.Infrastructure.AssemblyInfo.cs
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\obj\Debug\net6.0\Payment.Infrastructure.csproj.CoreCompileInputs.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\obj\Debug\net6.0\Payment.Infrastructure.csproj.CopyComplete
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\obj\Debug\net6.0\Payment.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\obj\Debug\net6.0\ref\Payment.Infrastructure.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Infrastructure\obj\Debug\net6.0\Payment.Infrastructure.pdb

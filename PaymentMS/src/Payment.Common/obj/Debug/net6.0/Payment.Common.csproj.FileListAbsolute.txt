@@ -1,0 +1,12 @@
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Common\bin\Debug\net6.0\Payment.Common.deps.json
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Common\bin\Debug\net6.0\Payment.Common.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Common\bin\Debug\net6.0\ref\Payment.Common.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Common\bin\Debug\net6.0\Payment.Common.pdb
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Common\obj\Debug\net6.0\Payment.Common.csproj.AssemblyReference.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Common\obj\Debug\net6.0\Payment.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Common\obj\Debug\net6.0\Payment.Common.AssemblyInfoInputs.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Common\obj\Debug\net6.0\Payment.Common.AssemblyInfo.cs
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Common\obj\Debug\net6.0\Payment.Common.csproj.CoreCompileInputs.cache
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Common\obj\Debug\net6.0\Payment.Common.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Common\obj\Debug\net6.0\ref\Payment.Common.dll
+D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Common\obj\Debug\net6.0\Payment.Common.pdb

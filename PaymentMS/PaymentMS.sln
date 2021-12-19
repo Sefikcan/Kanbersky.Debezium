@@ -5,11 +5,15 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F294B73C-AA07-46F3-A363-6048F6339345}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Api", "src\Payment.Api\Payment.Api.csproj", "{BCAA1AAF-456F-4821-8FDE-D2A7AC8193E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payment.Api", "src\Payment.Api\Payment.Api.csproj", "{BCAA1AAF-456F-4821-8FDE-D2A7AC8193E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Application", "src\Payment.Application\Payment.Application.csproj", "{24542162-C6DA-4794-8AA9-764295D71B7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payment.Application", "src\Payment.Application\Payment.Application.csproj", "{24542162-C6DA-4794-8AA9-764295D71B7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Infrastructure", "src\Payment.Infrastructure\Payment.Infrastructure.csproj", "{5AEB0262-1FC7-4D30-8FDE-06E08DE5CA42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payment.Infrastructure", "src\Payment.Infrastructure\Payment.Infrastructure.csproj", "{5AEB0262-1FC7-4D30-8FDE-06E08DE5CA42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payment.Common", "src\Payment.Common\Payment.Common.csproj", "{6866F37A-3020-4227-B977-AF8CC690FEBA}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{CB2674D9-F32F-4E98-AEA7-59A7335E0E60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +33,14 @@ Global
 		{5AEB0262-1FC7-4D30-8FDE-06E08DE5CA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AEB0262-1FC7-4D30-8FDE-06E08DE5CA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AEB0262-1FC7-4D30-8FDE-06E08DE5CA42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6866F37A-3020-4227-B977-AF8CC690FEBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6866F37A-3020-4227-B977-AF8CC690FEBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6866F37A-3020-4227-B977-AF8CC690FEBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6866F37A-3020-4227-B977-AF8CC690FEBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB2674D9-F32F-4E98-AEA7-59A7335E0E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2674D9-F32F-4E98-AEA7-59A7335E0E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2674D9-F32F-4E98-AEA7-59A7335E0E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2674D9-F32F-4E98-AEA7-59A7335E0E60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +49,7 @@ Global
 		{BCAA1AAF-456F-4821-8FDE-D2A7AC8193E3} = {F294B73C-AA07-46F3-A363-6048F6339345}
 		{24542162-C6DA-4794-8AA9-764295D71B7D} = {F294B73C-AA07-46F3-A363-6048F6339345}
 		{5AEB0262-1FC7-4D30-8FDE-06E08DE5CA42} = {F294B73C-AA07-46F3-A363-6048F6339345}
+		{6866F37A-3020-4227-B977-AF8CC690FEBA} = {F294B73C-AA07-46F3-A363-6048F6339345}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FB471586-BF54-4640-885B-699CEFC528F8}
