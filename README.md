@@ -26,5 +26,17 @@
 - In addition to the ability to follow the entire table in the database, it also allows you to follow the changes made in certain columns in the table.
 
 
+# Project Notes
+- All project has own docker-compose file. Because each service has its own database. 
+- This project was created specifically for .net to show how to use Debezium in databases such as SQL, Mongo, PostgreSQL.
+- Just go to the projects home directory and run the <code>docker-compose up </code> command.
+- Subsequently, You can go to http://host.docker.internal:xxxx/swagger address and tests debezium operation.
+
+# Tech Stack
+- .Net 6
+- Docker
+- PostgreSQL
+- Entity Framework Core
+- MongoDB
 
 
