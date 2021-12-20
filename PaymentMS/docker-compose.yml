@@ -1,6 +1,15 @@
 version: '3.4'
 
 services:
+  kafka:
+    image: confluentinc/cp-kafka
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper
+
+  connector:
+    image: debezium/connect:latest
+
   paymentdb:
     image: mcr.microsoft.com/mssql/server:2019-latest
 

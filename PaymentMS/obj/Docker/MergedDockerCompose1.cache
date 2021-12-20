@@ -1,0 +1,28 @@
+services:
+  payment.api:
+    build:
+      context: D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS
+      dockerfile: src/Payment.Api/Dockerfile
+    container_name: payment.api
+    depends_on:
+      paymentdb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      PaymentDbSettings:ConnectionStrings: Server=paymentdb;Database=PaymentDb;User
+        Id=sa;Password=ttt12345678
+    image: paymentapi
+    ports:
+    - published: 8001
+      target: 80
+  paymentdb:
+    container_name: paymentdb
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: ttt12345678
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 1433
+      target: 1433
+    restart: always
+version: '3.4'
