@@ -1,0 +1,72 @@
+services:
+  connector:
+    container_name: connector
+    depends_on:
+      kafka:
+        condition: service_started
+      paymentdb:
+        condition: service_started
+      zookeeper:
+        condition: service_started
+    environment:
+      BOOTSTRAP_SERVERS: kafka:9092
+      CONFIG_STORAGE_TOPIC: my_connect_configs
+      GROUP_ID: 1
+      OFFSET_STORAGE_TOPIC: my_connect_offsets
+    image: debezium/connect:latest
+    ports:
+    - published: 8083
+      target: 8083
+  kafka:
+    container_name: kafka
+    depends_on:
+      paymentdb:
+        condition: service_started
+      zookeeper:
+        condition: service_started
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_BROKER_ID: 1
+      KAFKA_LOG_CLEANER_DELETE_RETENTION_MS: 5000
+      KAFKA_MIN_INSYNC_REPLICAS: 1
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    image: confluentinc/cp-kafka
+    ports:
+    - published: 9092
+      target: 9092
+  payment.api:
+    build:
+      context: D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS
+      dockerfile: src/Payment.Api/Dockerfile
+    container_name: payment.api
+    depends_on:
+      paymentdb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      PaymentDbSettings:ConnectionStrings: Server=paymentdb;Database=PaymentDb;User
+        Id=sa;Password=ttt12345678
+    image: paymentapi
+    ports:
+    - published: 8001
+      target: 80
+  paymentdb:
+    container_name: paymentdb
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: ttt12345678
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 1433
+      target: 1433
+    restart: always
+  zookeeper:
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+    image: confluentinc/cp-zookeeper
+    ports:
+    - published: 2181
+      target: 2181
+version: '3.4'
