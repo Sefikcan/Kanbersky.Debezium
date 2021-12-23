@@ -25,7 +25,12 @@
       "ProjectGuid": "cb2674d9-f32f-4e98-aea7-59a7335e0e60",
       "DisplayName": "docker-compose",
       "ColorIndex": 4
+    },
+    "c2e63548-99d4-42da-bfaf-3b93fcc80c32": {
+      "ProjectGuid": "c2e63548-99d4-42da-bfaf-3b93fcc80c32",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }

@@ -1,0 +1,94 @@
+services:
+  connector:
+    container_name: connector
+    depends_on:
+      kafka:
+        condition: service_started
+      paymentdb:
+        condition: service_started
+      zookeeper:
+        condition: service_started
+    environment:
+      BOOTSTRAP_SERVERS: kafka:9092
+      CONFIG_STORAGE_TOPIC: my_connect_configs
+      GROUP_ID: 1
+      OFFSET_STORAGE_TOPIC: my_connect_offsets
+    image: debezium/connect:latest
+    ports:
+    - published: 8083
+      target: 8083
+  kafka:
+    container_name: kafka
+    depends_on:
+      paymentdb:
+        condition: service_started
+      zookeeper:
+        condition: service_started
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_BROKER_ID: 1
+      KAFKA_LOG_CLEANER_DELETE_RETENTION_MS: 5000
+      KAFKA_MIN_INSYNC_REPLICAS: 1
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    image: confluentinc/cp-kafka
+    ports:
+    - published: 9092
+      target: 9092
+  payment.api:
+    build:
+      context: D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS
+      dockerfile: src/Payment.Api/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Payment.Api
+      target: base
+    container_name: payment.api
+    depends_on:
+      paymentdb:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+      PaymentDbSettings:ConnectionStrings: Server=paymentdb;Database=PaymentDb;User
+        Id=sa;Password=ttt12345678
+    image: paymentapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net6.0/Payment.Api.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 8001
+      target: 80
+    tty: true
+    volumes:
+    - D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS\src\Payment.Api:/app:rw
+    - C:\Users\User\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\User\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\User\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\User\.nuget\packages:/root/.nuget/packages:ro
+    - D:\WorkSpaces\Back-end\Microservices\Kanbersky.Debezium\PaymentMS:/src:rw
+  paymentdb:
+    container_name: paymentdb
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: ttt12345678
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 1433
+      target: 1433
+    restart: always
+  zookeeper:
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+    image: confluentinc/cp-zookeeper
+    ports:
+    - published: 2181
+      target: 2181
+version: '3.4'

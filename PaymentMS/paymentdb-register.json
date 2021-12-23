@@ -1,0 +1,15 @@
+{
+  "name": "payment-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.sqlserver.SqlServerConnector",
+    "tasks.max": "1",
+    "database.server.name": "127.0.0.1",
+    "database.hostname": "paymentdb",
+    "database.port": "1433",
+    "database.user": "sa",
+    "database.password": "ttt12345678",
+    "database.dbname": "PaymentDb",
+    "database.history.kafka.bootstrap.servers": "kafka:9092",
+    "database.history.kafka.topic": "dbo.Payments"
+  }
+}
