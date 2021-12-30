@@ -1,10 +1,22 @@
 # NOTES ON DEBEZIUM'S MSSQL FEATURE
 
 - The following code is in MSSSQL enable the CDC feature.
-<code>
+```
  USE Database_Name
  EXEC sys.sp_cdc_enable_db
-</code>
+```
+- After
+```
+USE Database_Name
+GO
+EXEC sys.sp_cdc_enable_table 
+@source_schema = N'schema_name', 
+@source_name = N'table_name', 
+@role_name = NULL, 
+@filegroup_name = N'', 
+@supports_net_changes = 0 
+GO
+```
 
 ## It's Important!!!  
 - If you are going to use the CDC feature of MSSQL, your Sql Server version must be Enterprise, Developer, Enterprise Evaluation, or Standard.
